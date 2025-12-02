@@ -1,0 +1,39 @@
+body {
+    font-family: Figtree, sans-serif;
+    background-color: #202020;
+}
+p {
+    font-size: 16px;
+    color: white;
+}
+h1, h2, h3, h4 {
+    font-family: Sora, Figtree, sans-serif;
+    color: white;
+    opacity: 0.8;
+}
+.container {
+    justify-self: center;
+    width: 90%;
+    max-width: 800px
+}
+main, footer, .top, .links {
+    background-color: #151515;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+a {
+    color: #ceb5ff
+}
+.profile .blurbs .heading, .profile .friends .heading {
+    background: #151515;
+    color: #ffffff;
+    padding: 2px 7px;
+}
+nav {
+    margin-top: 15px;
+    border-radius: 25px;
+}
+.section {
+    color: #ffffff;
+}

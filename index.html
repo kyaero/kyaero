@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flux - Home</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <link href="styles/new.css" rel="stylesheet" type="text/css" media="all">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="logobar">
+            <a href="https://fluxstuff.org" style="padding-right: 20px;"><img src="images/fluxlogonew.svg"></a>
+            <h4 id="localtime">the date & time here is loading...</h4>
+        </div>
+        <nav>
+            <a href="https://fluxstuff.org" class="navbarbuttonhome">home</a>
+            <a href="https://fluxstuff.org/about" class="navbarbuttonabout">about</a>
+            <a href="https://fluxstuff.org/blog" class="navbarbuttonblog">blog</a>
+            <a href="https://scratch.mit.edu/users/FluxDesign/" class="navbarbuttonscratch">scratch</a>
+            <a href="https://bsky.app/profile/fluxstuff.org" class="navbarbuttonbsky">bluesky</a>
+            <a href="https://www.tiktok.com/@flux.stuff" class="navbarbuttontiktok">tiktok</a>
+            <a href="https://tech.fluxstuff.org" class="navbarbuttontech">technologies</a>
+            <a href="mailto:flux@fluxstuff.org" class="navbarbuttoncontact">contact</a>
+        </nav>
+        <div style="width: 85%; max-width: 810px; height: 1px; background-color: white; opacity: 0.1;"></div>
+        <script>
+        function updateUTCTime() {
+            const now = new Date();
+            const utcString = now.toUTCString();
+            document.getElementById("localtime").textContent = "the date & time here is " + utcString;
+        }
+
+        updateUTCTime();
+        setInterval(updateUTCTime, 1000);
+        </script>
+        <main style="width: 85%; align-items: center; margin: 40px; display: flex; flex-direction: column; text-align: center;">
+            <video src="images/thesoftwareupdate.mp4" style="width: 85%; max-width: 500px;" autoplay loop muted playsinline></video>
+            <h1 style="font-weight: 400; height: 20px;">The Software Update</h1>
+            <h3>Don't miss it. Steaming on 18th December 2025.</h3>
+        </main>
+        <div style="width: 85%; max-width: 810px; height: 1px; background-color: white; opacity: 0.1;"></div>
+        <nav>
+            <h4 style="opacity: 0.5;">© 2025 Flux</h4>
+        </nav>
+    </body>
+</html>

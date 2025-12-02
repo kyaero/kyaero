@@ -1,0 +1,71 @@
+html {
+  cursor: url('images/cursor.ico'), default;
+}
+
+a {
+  cursor: url('images/hahafunnycursor.ico'), pointer;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/inter.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Pixelfy'; 
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/Pixelfy.ttf') format('truetype'); 
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  padding-top: 100px;
+  margin: 0;
+  text-align: center;
+  background-color: #171717;
+}
+
+h1 {
+  margin: 5px;
+  color: #FFFFFF;
+  font-family: 'Pixelfy', sans-serif;
+  font-size: 60px;
+}
+
+footer {
+  margin: 10px;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  margin: 10px 0 0 0;
+  color: #FFFFFF;
+}
+
+ul li {
+  color: #ffffff;
+}
+
+a {
+  color: #BAD8FF;
+}
+
+a:visited {
+  color: #BAD8FF;
+}
+
+a:hover {
+  color: #FFFFFF;
+}
+
+a:active {
+  color: #D9D9D9;
+}

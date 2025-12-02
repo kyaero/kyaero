@@ -1,0 +1,70 @@
+/* CSS adds style to your website, such as colors, fonts, and positioning of your HTML content. 
+   For help, search for questions like "how to change link color." */
+
+html {
+  cursor: url('images/cursor.ico'), default; /* Custom cursor for the entire page */
+}
+
+a {
+  cursor: url('images/hahafunnycursor.ico'), pointer; /* Custom cursor specifically for links */
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/inter.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Pixelfy'; 
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/Pixelfy.ttf') format('truetype'); 
+}
+body {
+  font-family: 'Inter', sans-serif; /* Apply the Inter font */
+  display: flex; /* Center content horizontally and vertically */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Stack elements vertically */
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove default body margin */
+  text-align: center; /* Center align text */
+  background-color: #171717; /* Dark background for contrast */
+}
+
+h1 {
+  margin: 5px; /* Proper unit added to margin */
+  color: #FFFFFF; /* White color for better visibility */
+  font-family: 'Pixelfy', sans-serif; /* Apply the Inter font */
+  font-size: 60px
+}
+
+footer {
+  margin: 10px;
+   text-decoration: none;
+}
+img {
+  max-width: 100%; /* Ensure the image scales properly on smaller screens */
+  height: auto; /* Maintain aspect ratio */
+}
+
+p {
+  margin: 10px 0 0 0; /* Adjust spacing above and below the paragraph */
+  color: #FFFFFF; /* White color for text */
+}
+ul li {
+  color: #ffffff;
+}
+a {
+  color: #BAD8FF;
+}
+a:visited {
+  color: #BAD8FF;
+}
+a:hover {
+  color: #FFFFFF;
+}
+a:active {
+  color: #D9D9D9;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What are you doing here?</title>
+  <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet">
+  <style>
+      @font-face {
+        font-family: 'Inter';
+        src: url('/fonts/inter.woff2') format('woff2'),
+             url('/fonts/inter.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        text-align: center;
+        background-color: #171717; /* Optional, to make it visually appealing */
+      }
+
+      h1 {
+        margin: 5;
+        color: #FFFFFF;
+      }
+
+      img {
+        max-width: 100%; /* Ensures the image scales properly on smaller screens */
+        height: auto;
+      }
+
+      p {
+        margin: 10px 0 0 0;
+        color: #FFFFFF;
+      }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Page Not Found</h1>
+    <!-- Image with id to target in JavaScript -->
+    <img id="randomImage" src="/images/errors/.png" alt="Page Not Found">
+    <p>if there is supposed to be a page here then rip</p>
+  </div>
+
+  <!-- Inline JavaScript to change image randomly -->
+  <script>
+    function setRandomImage() {
+      const images = ['/images/errors/1.png', '/images/errors/2.png', '/images/errors/3.png'];
+      const randomIndex = Math.floor(Math.random() * images.length);
+      document.getElementById('randomImage').src = images[randomIndex];
+    }
+
+    // Set a random image when the page loads
+    window.onload = setRandomImage;
+  </script>
+</body>
+</html>
